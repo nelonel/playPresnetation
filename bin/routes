@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+GET    /hello						controllers.HelloWorld.sayHello()
+
+GET    /person/:name/:age			controllers.HelloWorld.person(name:String , age:Int)
+
+POST	/personPost					controllers.HelloWorld.personfom()
+
+GET		/proxy	
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

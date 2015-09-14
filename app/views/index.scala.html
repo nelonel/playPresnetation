@@ -1,0 +1,14 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+    <form action="@routes.HelloWorld.personfom" method="POST">
+    
+    <input type="text" name="name" />
+    <input type="text" name="age"/>
+    
+    <input type="submit" value="add" />
+    
+    </form>
+
+}
